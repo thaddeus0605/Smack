@@ -7,8 +7,26 @@
 //
 
 import Foundation
+
+
+typealias CompletionHandler = (_ SUCCESS: Bool) -> () 
+
+// User Defaults
+
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
+let USER_EMAIL = "userEmail"
+
+
+
 //Segues
 
 let TO_LOGIN = "toLoginVC"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND =  "unwindToChannel"
+
+
+//URL CONSTANTS
+
+let BASE_URL = "https://smackysmacksmackchatchat.herokuapp.com/"
+let URL_REGISTER = "\(BASE_URL)/account/register"
