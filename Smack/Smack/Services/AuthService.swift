@@ -26,7 +26,7 @@ class AuthService {
         }
     }
     
-    var AuthToken : String {
+    var authToken : String {
         get {
             return defaults.value(forKey: TOKEN_KEY) as! String
         }
@@ -36,7 +36,7 @@ class AuthService {
         }
     }
     
-    var UserEmail : String {
+    var userEmail : String {
         get {
             return defaults.value(forKey: USER_EMAIL) as! String
         }
@@ -47,13 +47,13 @@ class AuthService {
     }
     
     
-    func registerUser(email : String, password : String, completion: @ escaping CompletionHandler) {
+    func registerUser(email: String, password: String, completion: @ escaping CompletionHandler) {
         
         let lowerCaseEmail = email.lowercased()
         
         
         let header = [
-            "Content-Type" : "application/json; charset=utf-8"
+            "Content-Type": "application/json; charset=utf-8"
         ]
         
         let body: [String : Any] = [
@@ -62,6 +62,7 @@ class AuthService {
         ]
         
         Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
+            
             if response.result.error == nil {
                 completion(true)
                 

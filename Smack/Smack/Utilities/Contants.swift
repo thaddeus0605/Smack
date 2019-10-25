@@ -9,7 +9,7 @@
 import Foundation
 
 
-typealias CompletionHandler = (_ SUCCESS: Bool) -> () 
+typealias CompletionHandler = (_ Success: Bool) -> ()
 
 // User Defaults
 
@@ -28,5 +28,5 @@ let UNWIND =  "unwindToChannel"
 
 //URL CONSTANTS
 
-let BASE_URL = "https://smackysmacksmackchatchat.herokuapp.com/"
-let URL_REGISTER = "\(BASE_URL)/account/register"
+let BASE_URL = "https://smackitysmackersmackchat.herokuapp.com/v1/"
+let URL_REGISTER = "\(BASE_URL)account/register"
