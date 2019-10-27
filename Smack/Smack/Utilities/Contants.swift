@@ -24,6 +24,7 @@ let USER_EMAIL = "userEmail"
 let TO_LOGIN = "toLoginVC"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND =  "unwindToChannel"
+let TO_AVATAR_PICKER = "toAvatarPicker"
 
 
 //URL CONSTANTS
