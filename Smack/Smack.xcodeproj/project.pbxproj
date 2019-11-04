@@ -24,6 +24,8 @@
 		774F2919236549FB005C7A0A /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F2918236549FB005C7A0A /* AvatarPickerVC.swift */; };
 		774F291B23654D36005C7A0A /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F291A23654D36005C7A0A /* AvatarCell.swift */; };
 		774F291D23666C61005C7A0A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774F291C23666C61005C7A0A /* CircleImage.swift */; };
+		778291AA236FC2B6009159F4 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778291A9236FC2B6009159F4 /* MessageService.swift */; };
+		778291AC236FC2E3009159F4 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778291AB236FC2E3009159F4 /* Channel.swift */; };
 		77C323C2236BE68300726808 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C323C0236BE68300726808 /* ProfileVC.swift */; };
 		77C323C3236BE68300726808 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C323C1236BE68300726808 /* ProfileVC.xib */; };
 		9DCD614ABDAF10A9410CC44D /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0690AFDFD2E00C7B257F0CCE /* Pods_Smack.framework */; };
@@ -53,6 +55,8 @@
 		774F2918236549FB005C7A0A /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		774F291A23654D36005C7A0A /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		774F291C23666C61005C7A0A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		778291A9236FC2B6009159F4 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		778291AB236FC2E3009159F4 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		77C323C0236BE68300726808 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		77C323C1236BE68300726808 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		8CE296FC06E9FE46DAF8073C /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 		774F2901236217CD005C7A0A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				778291AB236FC2E3009159F4 /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			children = (
 				774F291023628D0C005C7A0A /* AuthService.swift */,
 				774F291623639528005C7A0A /* UserDataService.swift */,
+				778291A9236FC2B6009159F4 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -311,7 +317,9 @@
 				774F29052362180E005C7A0A /* ChannelVC.swift in Sources */,
 				774F2919236549FB005C7A0A /* AvatarPickerVC.swift in Sources */,
 				774F291523637479005C7A0A /* RoundedButton.swift in Sources */,
+				778291AC236FC2E3009159F4 /* Channel.swift in Sources */,
 				774F291D23666C61005C7A0A /* CircleImage.swift in Sources */,
+				778291AA236FC2B6009159F4 /* MessageService.swift in Sources */,
 				774F2903236217FE005C7A0A /* ChatVC.swift in Sources */,
 				774F291723639528005C7A0A /* UserDataService.swift in Sources */,
 				774F290E236250D8005C7A0A /* CreateAccountVC.swift in Sources */,
