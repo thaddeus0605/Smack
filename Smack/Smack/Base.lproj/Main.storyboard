@@ -205,6 +205,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtn:" destination="1HJ-ii-iXA" eventType="touchUpInside" id="hjc-8w-jds"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Fy7-6c-qIR">
                                 <rect key="frame" x="126.5" y="80" width="122.5" height="40"/>
@@ -238,15 +241,21 @@
                                     <action selector="createAccountPressed:" destination="1HJ-ii-iXA" eventType="touchUpInside" id="OXb-zy-304"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aEa-6W-xVc">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aji-ca-XD5" firstAttribute="centerX" secondItem="FKL-FY-X3y" secondAttribute="centerX" id="0GR-uQ-rgd"/>
+                            <constraint firstItem="aEa-6W-xVc" firstAttribute="centerY" secondItem="FKL-FY-X3y" secondAttribute="centerY" constant="-100" id="1bb-YG-yAC"/>
                             <constraint firstItem="Fy7-6c-qIR" firstAttribute="centerX" secondItem="FKL-FY-X3y" secondAttribute="centerX" id="2O7-aJ-EWv"/>
                             <constraint firstItem="IQG-xC-STr" firstAttribute="top" secondItem="Fy7-6c-qIR" secondAttribute="bottom" constant="40" id="9nk-T5-b1n"/>
                             <constraint firstItem="aji-ca-XD5" firstAttribute="top" secondItem="IQG-xC-STr" secondAttribute="bottom" constant="40" id="Abn-g4-I3D"/>
                             <constraint firstItem="sLe-CA-2U9" firstAttribute="centerX" secondItem="FKL-FY-X3y" secondAttribute="centerX" id="CM8-w7-q6n"/>
                             <constraint firstItem="sLe-CA-2U9" firstAttribute="top" secondItem="aji-ca-XD5" secondAttribute="bottom" id="Osu-Pd-nhh"/>
+                            <constraint firstItem="aEa-6W-xVc" firstAttribute="centerX" secondItem="FKL-FY-X3y" secondAttribute="centerX" id="SVK-bl-66C"/>
                             <constraint firstItem="nSN-Sh-R9W" firstAttribute="trailing" secondItem="7Je-pn-Sj6" secondAttribute="trailing" constant="10" id="UpP-1V-phH"/>
                             <constraint firstItem="7Je-pn-Sj6" firstAttribute="top" secondItem="nSN-Sh-R9W" secondAttribute="top" constant="8" id="aTw-AS-br7"/>
                             <constraint firstItem="IQG-xC-STr" firstAttribute="centerX" secondItem="FKL-FY-X3y" secondAttribute="centerX" id="oXl-mr-HyR"/>
@@ -255,6 +264,9 @@
                         <viewLayoutGuide key="safeArea" id="nSN-Sh-R9W"/>
                     </view>
                     <connections>
+                        <outlet property="passwordText" destination="yvs-Qb-UHB" id="HPX-Fa-gbC"/>
+                        <outlet property="spinner" destination="aEa-6W-xVc" id="TOF-rP-bW3"/>
+                        <outlet property="userNameText" destination="9tI-gZ-0Y4" id="1Hl-VD-gan"/>
                         <segue destination="TsW-jF-WFY" kind="show" identifier="toCreateAccount" id="Kz7-qZ-qYq"/>
                     </connections>
                 </viewController>
